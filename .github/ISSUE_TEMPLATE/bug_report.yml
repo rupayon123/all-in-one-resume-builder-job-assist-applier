@@ -1,0 +1,65 @@
+name: Bug report
+description: Report a reproducible bug in the resume/job-search workspace
+title: "Bug: "
+labels: [bug]
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: What went wrong?
+      placeholder: Describe the user-facing problem.
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Resume builder
+        - ATS checker
+        - Job tracker
+        - Tailoring drafts
+        - Cover letters
+        - PDF/DOCX export
+        - Chrome extension
+        - Auth/storage
+        - Deployment/build
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open ...
+        2. Click ...
+        3. See ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+    validations:
+      required: true
+  - type: textarea
+    id: privacy
+    attributes:
+      label: Privacy note
+      description: Do not paste real resumes, phone numbers, addresses, emails, access tokens, API keys, or private job data.
+      placeholder: Confirm any sample data is fake or redacted.
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      placeholder: Browser, OS, local/demo mode, deployed URL, commit SHA, or extension version.

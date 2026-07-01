@@ -9,6 +9,8 @@
   |
   <a href="docs/DEPLOYMENT.md">Deployment</a>
   |
+  <a href="docs/PRIVACY_SECURITY_CHECKLIST.md">Privacy & Security</a>
+  |
   <a href="extension/">Chrome extension</a>
   |
   <a href="CONTRIBUTING.md">Contributing</a>

@@ -1,0 +1,52 @@
+name: Feature request
+description: Propose a focused improvement for the job-search workspace
+title: "Feature: "
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or workflow
+      description: What job-search, resume, application, or extension workflow should improve?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      placeholder: Describe the smallest useful version.
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Resume builder
+        - ATS checker
+        - Job tracker
+        - AI tailoring
+        - Cover letters
+        - Export
+        - Chrome extension
+        - Setup/deployment
+        - Documentation
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: privacy
+    attributes:
+      label: Privacy impact
+      placeholder: Note whether the feature reads, stores, exports, or sends personal/job data.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      placeholder: |
+        - [ ] ...
+        - [ ] ...
+    validations:
+      required: true
