@@ -1,0 +1,57 @@
+name: Privacy or security review
+description: Track privacy, data handling, auth, storage, or AI-provider risk
+title: "Privacy/security: "
+labels: [security]
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: What needs review or mitigation?
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Resume personal data
+        - Job application history
+        - Supabase row-level security
+        - API keys and environment variables
+        - AI drafting prompts/responses
+        - PDF/DOCX export
+        - Chrome extension permissions
+        - Logging/analytics
+        - Deployment configuration
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: risk
+    attributes:
+      label: Risk
+      placeholder: Explain what could leak, be overwritten, be logged, or be accessed by the wrong user.
+    validations:
+      required: true
+  - type: textarea
+    id: expected_control
+    attributes:
+      label: Expected control
+      placeholder: Describe the intended auth, validation, redaction, storage, or deployment control.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction_or_audit
+    attributes:
+      label: Reproduction or audit path
+      placeholder: Include file paths, route names, schema tables, or manual audit steps.
+    validations:
+      required: false
+  - type: checkboxes
+    id: sensitive_data
+    attributes:
+      label: Sensitive data check
+      options:
+        - label: I did not include real resumes, credentials, API keys, private applicant data, or unredacted job history.
+          required: true
